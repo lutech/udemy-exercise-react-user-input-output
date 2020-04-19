@@ -29,7 +29,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <UserInput changeName={this.nameChangeHandler}/>
+        <UserInput changeName={this.nameChangeHandler} username={this.state.users[1].username}/>
         <UserOutput username={this.state.users[0].username}/>
         <UserOutput username={this.state.users[1].username}/>
       </div>
